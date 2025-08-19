@@ -1,0 +1,92 @@
+[
+  {
+    "name": "Nile Ritz-Carlton",
+    "location": "Cairo, Egypt",
+    "price_per_night": 415,
+    "available_rooms": 12,
+    "rating": 4.8,
+    "source": "supplier_b",
+    "amenities": ["pool", "spa", "wifi", "restaurant", "gym"]
+  },
+  {
+    "name": "Four Seasons Cairo",
+    "location": "Cairo, Egypt",
+    "price_per_night": 385,
+    "available_rooms": 8,
+    "rating": 4.7,
+    "source": "supplier_b",
+    "amenities": ["pool", "spa", "wifi", "restaurant"]
+  },
+  {
+    "name": "Alexandria Cecil Hotel",
+    "location": "Alexandria, Egypt",
+    "price_per_night": 180,
+    "available_rooms": 15,
+    "rating": 4.2,
+    "source": "supplier_b",
+    "amenities": ["wifi", "restaurant", "beach access"]
+  },
+  {
+    "name": "Paradise Inn Windsor",
+    "location": "Alexandria, Egypt",
+    "price_per_night": 150,
+    "available_rooms": 20,
+    "rating": 4.0,
+    "source": "supplier_b",
+    "amenities": ["wifi", "restaurant", "sea view"]
+  },
+  {
+    "name": "Mediterranean Azure",
+    "location": "Alexandria, Egypt",
+    "price_per_night": 220,
+    "available_rooms": 25,
+    "rating": 4.4,
+    "source": "supplier_b",
+    "amenities": ["pool", "beach access", "wifi", "restaurant"]
+  },
+  {
+    "name": "Helnan Palestine",
+    "location": "Alexandria, Egypt",
+    "price_per_night": 190,
+    "available_rooms": 30,
+    "rating": 4.3,
+    "source": "supplier_b",
+    "amenities": ["pool", "wifi", "restaurant", "beach access"]
+  },
+  {
+    "name": "Marriott Mena House",
+    "location": "Giza, Egypt",
+    "price_per_night": 345,
+    "available_rooms": 10,
+    "rating": 4.6,
+    "source": "supplier_b",
+    "amenities": ["pool", "wifi", "restaurant", "pyramid view"]
+  },
+  {
+    "name": "Steigenberger Hotel",
+    "location": "Cairo, Egypt",
+    "price_per_night": 225,
+    "available_rooms": 18,
+    "rating": 4.3,
+    "source": "supplier_b",
+    "amenities": ["wifi", "restaurant", "gym"]
+  },
+  {
+    "name": "Tolip Alexandria",
+    "location": "Alexandria, Egypt",
+    "price_per_night": 160,
+    "available_rooms": 22,
+    "rating": 4.1,
+    "source": "supplier_b",
+    "amenities": ["pool", "wifi", "restaurant"]
+  },
+  {
+    "name": "Sheraton Montazah",
+    "location": "Alexandria, Egypt",
+    "price_per_night": 175,
+    "available_rooms": 28,
+    "rating": 4.2,
+    "source": "supplier_b",
+    "amenities": ["pool", "beach access", "wifi", "restaurant"]
+  }
+]

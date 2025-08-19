@@ -1,0 +1,738 @@
+[
+    {
+        "name": "Nile River Resort",
+        "location": "Cairo, Egypt",
+        "price_per_night": 150,
+        "available_rooms": 6,
+        "rating": 4.8,
+        "source": "supplier_a"
+    },
+    {
+        "name": "Pyramids View Hotel",
+        "location": "Giza, Egypt",
+        "price_per_night": 120,
+        "available_rooms": 10,
+        "rating": 4.5,
+        "source": "supplier_a"
+    },
+    {
+        "name": "Red Sea Paradise",
+        "location": "Hurghada, Egypt",
+        "price_per_night": 180,
+        "available_rooms": 8,
+        "rating": 4.7,
+        "source": "supplier_a"
+    },
+    {
+        "name": "Luxor Palace",
+        "location": "Luxor, Egypt",
+        "price_per_night": 140,
+        "available_rooms": 12,
+        "rating": 4.6,
+        "source": "supplier_a"
+    },
+    {
+        "name": "Alexandria Seaside Inn",
+        "location": "Alexandria, Egypt",
+        "price_per_night": 130,
+        "available_rooms": 7,
+        "rating": 4.4,
+        "source": "supplier_a"
+    },
+    {
+        "name": "Sharm El Sheikh Oasis",
+        "location": "Sharm El Sheikh, Egypt",
+        "price_per_night": 200,
+        "available_rooms": 9,
+        "rating": 4.9,
+        "source": "supplier_a"
+    },
+    {
+        "name": "Aswan Riverside Hotel",
+        "location": "Aswan, Egypt",
+        "price_per_night": 110,
+        "available_rooms": 5,
+        "rating": 4.3,
+        "source": "supplier_a"
+    },
+    {
+        "name": "Dahab Blue Lagoon",
+        "location": "Dahab, Egypt",
+        "price_per_night": 160,
+        "available_rooms": 6,
+        "rating": 4.7,
+        "source": "supplier_a"
+    },
+    {
+        "name": "Marsa Alam Coral Resort",
+        "location": "Marsa Alam, Egypt",
+        "price_per_night": 170,
+        "available_rooms": 8,
+        "rating": 4.8,
+        "source": "supplier_a"
+    },
+    {
+        "name": "Fayoum Lake Retreat",
+        "location": "Fayoum, Egypt",
+        "price_per_night": 100,
+        "available_rooms": 4,
+        "rating": 4.2,
+        "source": "supplier_a"
+    },
+    {
+        "name": "Suez Canal View Hotel",
+        "location": "Suez, Egypt",
+        "price_per_night": 115,
+        "available_rooms": 7,
+        "rating": 4.3,
+        "source": "supplier_a"
+    },
+    {
+        "name": "Port Said Beach Resort",
+        "location": "Port Said, Egypt",
+        "price_per_night": 125,
+        "available_rooms": 6,
+        "rating": 4.4,
+        "source": "supplier_a"
+    },
+    {
+        "name": "Ismailia Garden Hotel",
+        "location": "Ismailia, Egypt",
+        "price_per_night": 105,
+        "available_rooms": 5,
+        "rating": 4.1,
+        "source": "supplier_a"
+    },
+    {
+        "name": "El Gouna Marina Inn",
+        "location": "El Gouna, Egypt",
+        "price_per_night": 175,
+        "available_rooms": 9,
+        "rating": 4.6,
+        "source": "supplier_a"
+    },
+    {
+        "name": "Siwa Oasis Lodge",
+        "location": "Siwa, Egypt",
+        "price_per_night": 95,
+        "available_rooms": 4,
+        "rating": 4.0,
+        "source": "supplier_a"
+    },
+    {
+        "name": "Taba Heights Resort",
+        "location": "Taba, Egypt",
+        "price_per_night": 185,
+        "available_rooms": 7,
+        "rating": 4.7,
+        "source": "supplier_a"
+    },
+    {
+        "name": "Minya Valley Hotel",
+        "location": "Minya, Egypt",
+        "price_per_night": 90,
+        "available_rooms": 5,
+        "rating": 4.1,
+        "source": "supplier_a"
+    },
+    {
+        "name": "Sohag Nile View",
+        "location": "Sohag, Egypt",
+        "price_per_night": 100,
+        "available_rooms": 6,
+        "rating": 4.2,
+        "source": "supplier_a"
+    },
+    {
+        "name": "Qena Grand Hotel",
+        "location": "Qena, Egypt",
+        "price_per_night": 110,
+        "available_rooms": 7,
+        "rating": 4.3,
+        "source": "supplier_a"
+    },
+    {
+        "name": "Assiut City Inn",
+        "location": "Assiut, Egypt",
+        "price_per_night": 95,
+        "available_rooms": 5,
+        "rating": 4.0,
+        "source": "supplier_a"
+    },
+    {
+        "name": "Beni Suef Plaza",
+        "location": "Beni Suef, Egypt",
+        "price_per_night": 85,
+        "available_rooms": 4,
+        "rating": 3.9,
+        "source": "supplier_a"
+    },
+    {
+        "name": "Damietta Beach Hotel",
+        "location": "Damietta, Egypt",
+        "price_per_night": 120,
+        "available_rooms": 6,
+        "rating": 4.2,
+        "source": "supplier_a"
+    },
+    {
+        "name": "Kafr El Sheikh Inn",
+        "location": "Kafr El Sheikh, Egypt",
+        "price_per_night": 90,
+        "available_rooms": 5,
+        "rating": 4.0,
+        "source": "supplier_a"
+    },
+    {
+        "name": "Damanhur Central Hotel",
+        "location": "Damanhur, Egypt",
+        "price_per_night": 100,
+        "available_rooms": 6,
+        "rating": 4.1,
+        "source": "supplier_a"
+    },
+    {
+        "name": "Zagazig Riverside",
+        "location": "Zagazig, Egypt",
+        "price_per_night": 105,
+        "available_rooms": 7,
+        "rating": 4.2,
+        "source": "supplier_a"
+    },
+    {
+        "name": "Tanta City Hotel",
+        "location": "Tanta, Egypt",
+        "price_per_night": 110,
+        "available_rooms": 8,
+        "rating": 4.3,
+        "source": "supplier_a"
+    },
+    {
+        "name": "Mansoura Nile Inn",
+        "location": "Mansoura, Egypt",
+        "price_per_night": 115,
+        "available_rooms": 6,
+        "rating": 4.4,
+        "source": "supplier_a"
+    },
+    {
+        "name": "Qalyubia Palace",
+        "location": "Qalyubia, Egypt",
+        "price_per_night": 95,
+        "available_rooms": 5,
+        "rating": 4.0,
+        "source": "supplier_a"
+    },
+    {
+        "name": "Monufia Garden Hotel",
+        "location": "Monufia, Egypt",
+        "price_per_night": 90,
+        "available_rooms": 4,
+        "rating": 3.9,
+        "source": "supplier_a"
+    },
+    {
+        "name": "Beheira Lake Resort",
+        "location": "Beheira, Egypt",
+        "price_per_night": 100,
+        "available_rooms": 6,
+        "rating": 4.1,
+        "source": "supplier_a"
+    },
+    {
+        "name": "Sharqia Central Inn",
+        "location": "Sharqia, Egypt",
+        "price_per_night": 105,
+        "available_rooms": 7,
+        "rating": 4.2,
+        "source": "supplier_a"
+    },
+    {
+        "name": "Gharbia Plaza",
+        "location": "Gharbia, Egypt",
+        "price_per_night": 110,
+        "available_rooms": 8,
+        "rating": 4.3,
+        "source": "supplier_a"
+    },
+    {
+        "name": "Matruh Beach Resort",
+        "location": "Matruh, Egypt",
+        "price_per_night": 130,
+        "available_rooms": 9,
+        "rating": 4.5,
+        "source": "supplier_a"
+    },
+    {
+        "name": "New Valley Oasis",
+        "location": "New Valley, Egypt",
+        "price_per_night": 95,
+        "available_rooms": 5,
+        "rating": 4.0,
+        "source": "supplier_a"
+    },
+    {
+        "name": "North Sinai Retreat",
+        "location": "North Sinai, Egypt",
+        "price_per_night": 100,
+        "available_rooms": 6,
+        "rating": 4.1,
+        "source": "supplier_a"
+    },
+    {
+        "name": "South Sinai Resort",
+        "location": "South Sinai, Egypt",
+        "price_per_night": 180,
+        "available_rooms": 8,
+        "rating": 4.7,
+        "source": "supplier_a"
+    },
+    {
+        "name": "Helwan City Hotel",
+        "location": "Helwan, Egypt",
+        "price_per_night": 110,
+        "available_rooms": 7,
+        "rating": 4.3,
+        "source": "supplier_a"
+    },
+    {
+        "name": "Obour Palace",
+        "location": "Obour, Egypt",
+        "price_per_night": 120,
+        "available_rooms": 6,
+        "rating": 4.4,
+        "source": "supplier_a"
+    },
+    {
+        "name": "6th of October Inn",
+        "location": "6th of October, Egypt",
+        "price_per_night": 130,
+        "available_rooms": 7,
+        "rating": 4.5,
+        "source": "supplier_a"
+    },
+    {
+        "name": "Sheikh Zayed Hotel",
+        "location": "Sheikh Zayed, Egypt",
+        "price_per_night": 140,
+        "available_rooms": 8,
+        "rating": 4.6,
+        "source": "supplier_a"
+    },
+    {
+        "name": "Nasr City Plaza",
+        "location": "Nasr City, Egypt",
+        "price_per_night": 150,
+        "available_rooms": 9,
+        "rating": 4.7,
+        "source": "supplier_a"
+    },
+    {
+        "name": "Maadi Riverside Hotel",
+        "location": "Maadi, Egypt",
+        "price_per_night": 160,
+        "available_rooms": 10,
+        "rating": 4.8,
+        "source": "supplier_a"
+    },
+    {
+        "name": "Hadayek El Ahram Inn",
+        "location": "Hadayek El Ahram, Egypt",
+        "price_per_night": 120,
+        "available_rooms": 6,
+        "rating": 4.4,
+        "source": "supplier_a"
+    },
+    {
+        "name": "Mohandessin Central Hotel",
+        "location": "Mohandessin, Egypt",
+        "price_per_night": 130,
+        "available_rooms": 7,
+        "rating": 4.5,
+        "source": "supplier_a"
+    },
+    {
+        "name": "Dokki Palace",
+        "location": "Dokki, Egypt",
+        "price_per_night": 140,
+        "available_rooms": 8,
+        "rating": 4.6,
+        "source": "supplier_a"
+    },
+    {
+        "name": "Zamalek Island Resort",
+        "location": "Zamalek, Egypt",
+        "price_per_night": 150,
+        "available_rooms": 9,
+        "rating": 4.7,
+        "source": "supplier_a"
+    },
+    {
+        "name": "Garden City Inn",
+        "location": "Garden City, Egypt",
+        "price_per_night": 160,
+        "available_rooms": 10,
+        "rating": 4.8,
+        "source": "supplier_a"
+    },
+    {
+        "name": "Haram View Hotel",
+        "location": "Haram, Egypt",
+        "price_per_night": 120,
+        "available_rooms": 6,
+        "rating": 4.4,
+        "source": "supplier_a"
+    },
+    {
+        "name": "El Rehab Plaza",
+        "location": "El Rehab, Egypt",
+        "price_per_night": 130,
+        "available_rooms": 7,
+        "rating": 4.5,
+        "source": "supplier_a"
+    },
+    {
+        "name": "Tagamoa Heights Resort",
+        "location": "Tagamoa, Egypt",
+        "price_per_night": 140,
+        "available_rooms": 8,
+        "rating": 4.6,
+        "source": "supplier_a"
+    },
+    {
+        "name": "New Cairo Inn",
+        "location": "New Cairo, Egypt",
+        "price_per_night": 150,
+        "available_rooms": 9,
+        "rating": 4.7,
+        "source": "supplier_a"
+    },
+    {
+        "name": "El Shorouk City Hotel",
+        "location": "El Shorouk, Egypt",
+        "price_per_night": 160,
+        "available_rooms": 10,
+        "rating": 4.8,
+        "source": "supplier_a"
+    },
+    {
+        "name": "Obour City Plaza",
+        "location": "Obour City, Egypt",
+        "price_per_night": 120,
+        "available_rooms": 6,
+        "rating": 4.4,
+        "source": "supplier_a"
+    },
+    {
+        "name": "10th of Ramadan Inn",
+        "location": "10th of Ramadan, Egypt",
+        "price_per_night": 130,
+        "available_rooms": 7,
+        "rating": 4.5,
+        "source": "supplier_a"
+    },
+    {
+        "name": "Sadat City Resort",
+        "location": "Sadat City, Egypt",
+        "price_per_night": 140,
+        "available_rooms": 8,
+        "rating": 4.6,
+        "source": "supplier_a"
+    },
+    {
+        "name": "Badr City Hotel",
+        "location": "Badr City, Egypt",
+        "price_per_night": 150,
+        "available_rooms": 9,
+        "rating": 4.7,
+        "source": "supplier_a"
+    },
+    {
+        "name": "6th of October Plaza",
+        "location": "6th of October City, Egypt",
+        "price_per_night": 160,
+        "available_rooms": 10,
+        "rating": 4.8,
+        "source": "supplier_a"
+    },
+    {
+        "name": "El Obour Heights",
+        "location": "El Obour, Egypt",
+        "price_per_night": 120,
+        "available_rooms": 6,
+        "rating": 4.4,
+        "source": "supplier_a"
+    },
+    {
+        "name": "El Salam City Inn",
+        "location": "El Salam City, Egypt",
+        "price_per_night": 130,
+        "available_rooms": 7,
+        "rating": 4.5,
+        "source": "supplier_a"
+    },
+    {
+        "name": "El Marg Central Hotel",
+        "location": "El Marg, Egypt",
+        "price_per_night": 140,
+        "available_rooms": 8,
+        "rating": 4.6,
+        "source": "supplier_a"
+    },
+    {
+        "name": "Ain Shams Plaza",
+        "location": "Ain Shams, Egypt",
+        "price_per_night": 150,
+        "available_rooms": 9,
+        "rating": 4.7,
+        "source": "supplier_a"
+    },
+    {
+        "name": "Heliopolis Garden Hotel",
+        "location": "Heliopolis, Egypt",
+        "price_per_night": 160,
+        "available_rooms": 10,
+        "rating": 4.8,
+        "source": "supplier_a"
+    },
+    {
+        "name": "Abbassia Palace",
+        "location": "Abbassia, Egypt",
+        "price_per_night": 120,
+        "available_rooms": 6,
+        "rating": 4.4,
+        "source": "supplier_a"
+    },
+    {
+        "name": "El Matareya Inn",
+        "location": "El Matareya, Egypt",
+        "price_per_night": 130,
+        "available_rooms": 7,
+        "rating": 4.5,
+        "source": "supplier_a"
+    },
+    {
+        "name": "El Basatin Resort",
+        "location": "El Basatin, Egypt",
+        "price_per_night": 140,
+        "available_rooms": 8,
+        "rating": 4.6,
+        "source": "supplier_a"
+    },
+    {
+        "name": "El Sayeda Zeinab Hotel",
+        "location": "El Sayeda Zeinab, Egypt",
+        "price_per_night": 150,
+        "available_rooms": 9,
+        "rating": 4.7,
+        "source": "supplier_a"
+    },
+    {
+        "name": "El Manial Riverside",
+        "location": "El Manial, Egypt",
+        "price_per_night": 160,
+        "available_rooms": 10,
+        "rating": 4.8,
+        "source": "supplier_a"
+    },
+    {
+        "name": "El Mokattam Heights",
+        "location": "El Mokattam, Egypt",
+        "price_per_night": 120,
+        "available_rooms": 6,
+        "rating": 4.4,
+        "source": "supplier_a"
+    },
+    {
+        "name": "El Agouza Central Hotel",
+        "location": "El Agouza, Egypt",
+        "price_per_night": 130,
+        "available_rooms": 7,
+        "rating": 4.5,
+        "source": "supplier_a"
+    },
+    {
+        "name": "El Warraq Island Resort",
+        "location": "El Warraq, Egypt",
+        "price_per_night": 140,
+        "available_rooms": 8,
+        "rating": 4.6,
+        "source": "supplier_a"
+    },
+    {
+        "name": "El Haram City Inn",
+        "location": "El Haram City, Egypt",
+        "price_per_night": 150,
+        "available_rooms": 9,
+        "rating": 4.7,
+        "source": "supplier_a"
+    },
+    {
+        "name": "El Maamoura Beach Hotel",
+        "location": "El Maamoura, Egypt",
+        "price_per_night": 160,
+        "available_rooms": 10,
+        "rating": 4.8,
+        "source": "supplier_a"
+    },
+    {
+        "name": "El Mandara Palace",
+        "location": "El Mandara, Egypt",
+        "price_per_night": 120,
+        "available_rooms": 6,
+        "rating": 4.4,
+        "source": "supplier_a"
+    },
+    {
+        "name": "El Syoufi Inn",
+        "location": "El Syoufi, Egypt",
+        "price_per_night": 130,
+        "available_rooms": 7,
+        "rating": 4.5,
+        "source": "supplier_a"
+    },
+    {
+        "name": "El Hadra Resort",
+        "location": "El Hadra, Egypt",
+        "price_per_night": 140,
+        "available_rooms": 8,
+        "rating": 4.6,
+        "source": "supplier_a"
+    },
+    {
+        "name": "El Shatby Hotel",
+        "location": "El Shatby, Egypt",
+        "price_per_night": 150,
+        "available_rooms": 9,
+        "rating": 4.7,
+        "source": "supplier_a"
+    },
+    {
+        "name": "El Anfoushi Riverside",
+        "location": "El Anfoushi, Egypt",
+        "price_per_night": 160,
+        "available_rooms": 10,
+        "rating": 4.8,
+        "source": "supplier_a"
+    },
+    {
+        "name": "El Max Heights",
+        "location": "El Max, Egypt",
+        "price_per_night": 120,
+        "available_rooms": 6,
+        "rating": 4.4,
+        "source": "supplier_a"
+    },
+    {
+        "name": "El Dekheila Central Hotel",
+        "location": "El Dekheila, Egypt",
+        "price_per_night": 130,
+        "available_rooms": 7,
+        "rating": 4.5,
+        "source": "supplier_a"
+    },
+    {
+        "name": "El Amreya Island Resort",
+        "location": "El Amreya, Egypt",
+        "price_per_night": 140,
+        "available_rooms": 8,
+        "rating": 4.6,
+        "source": "supplier_a"
+    },
+    {
+        "name": "El Montaza City Inn",
+        "location": "El Montaza, Egypt",
+        "price_per_night": 150,
+        "available_rooms": 9,
+        "rating": 4.7,
+        "source": "supplier_a"
+    },
+    {
+        "name": "El Ibrahimiya Beach Hotel",
+        "location": "El Ibrahimiya, Egypt",
+        "price_per_night": 160,
+        "available_rooms": 10,
+        "rating": 4.8,
+        "source": "supplier_a"
+    },
+    {
+        "name": "El Raml Palace",
+        "location": "El Raml, Egypt",
+        "price_per_night": 120,
+        "available_rooms": 6,
+        "rating": 4.4,
+        "source": "supplier_a"
+    },
+    {
+        "name": "El Sidi Gaber Inn",
+        "location": "El Sidi Gaber, Egypt",
+        "price_per_night": 130,
+        "available_rooms": 7,
+        "rating": 4.5,
+        "source": "supplier_a"
+    },
+    {
+        "name": "El Sporting Resort",
+        "location": "El Sporting, Egypt",
+        "price_per_night": 140,
+        "available_rooms": 8,
+        "rating": 4.6,
+        "source": "supplier_a"
+    },
+    {
+        "name": "El Azarita Hotel",
+        "location": "El Azarita, Egypt",
+        "price_per_night": 150,
+        "available_rooms": 9,
+        "rating": 4.7,
+        "source": "supplier_a"
+    },
+    {
+        "name": "El Moharam Bek Riverside",
+        "location": "El Moharam Bek, Egypt",
+        "price_per_night": 160,
+        "available_rooms": 10,
+        "rating": 4.8,
+        "source": "supplier_a"
+    },
+    {
+        "name": "El Labban Heights",
+        "location": "El Labban, Egypt",
+        "price_per_night": 120,
+        "available_rooms": 6,
+        "rating": 4.4,
+        "source": "supplier_a"
+    },
+    {
+        "name": "El Attarin Central Hotel",
+        "location": "El Attarin, Egypt",
+        "price_per_night": 130,
+        "available_rooms": 7,
+        "rating": 4.5,
+        "source": "supplier_a"
+    },
+    {
+        "name": "El Mansheya Island Resort",
+        "location": "El Mansheya, Egypt",
+        "price_per_night": 140,
+        "available_rooms": 8,
+        "rating": 4.6,
+        "source": "supplier_a"
+    },
+    {
+        "name": "El Gomrok City Inn",
+        "location": "El Gomrok, Egypt",
+        "price_per_night": 150,
+        "available_rooms": 9,
+        "rating": 4.7,
+        "source": "supplier_a"
+    },
+    {
+        "name": "El Bab Sharq Beach Hotel",
+        "location": "El Bab Sharq, Egypt",
+        "price_per_night": 160,
+        "available_rooms": 10,
+        "rating": 4.8,
+        "source": "supplier_a"
+    }
+]

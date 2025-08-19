@@ -1,0 +1,92 @@
+[
+  {
+    "name": "Nile Ritz-Carlton",
+    "location": "Cairo, Egypt",
+    "price_per_night": 410,
+    "available_rooms": 18,
+    "rating": 4.8,
+    "source": "supplier_c",
+    "amenities": ["pool", "spa", "wifi", "restaurant", "gym"]
+  },
+  {
+    "name": "Luxor Winter Palace",
+    "location": "Luxor, Egypt",
+    "price_per_night": 280,
+    "available_rooms": 15,
+    "rating": 4.5,
+    "source": "supplier_c",
+    "amenities": ["pool", "wifi", "restaurant", "historical"]
+  },
+  {
+    "name": "Sofitel Winter Palace",
+    "location": "Luxor, Egypt",
+    "price_per_night": 320,
+    "available_rooms": 12,
+    "rating": 4.6,
+    "source": "supplier_c",
+    "amenities": ["pool", "spa", "wifi", "restaurant"]
+  },
+  {
+    "name": "Steigenberger Hotel",
+    "location": "Cairo, Egypt",
+    "price_per_night": 215,
+    "available_rooms": 22,
+    "rating": 4.3,
+    "source": "supplier_c",
+    "amenities": ["wifi", "restaurant", "gym"]
+  },
+  {
+    "name": "Hilton Luxor Resort",
+    "location": "Luxor, Egypt",
+    "price_per_night": 260,
+    "available_rooms": 20,
+    "rating": 4.4,
+    "source": "supplier_c",
+    "amenities": ["pool", "spa", "wifi", "restaurant", "nile view"]
+  },
+  {
+    "name": "Movenpick Aswan",
+    "location": "Aswan, Egypt",
+    "price_per_night": 240,
+    "available_rooms": 25,
+    "rating": 4.3,
+    "source": "supplier_c",
+    "amenities": ["pool", "wifi", "restaurant", "nile view"]
+  },
+  {
+    "name": "Marriott Mena House",
+    "location": "Giza, Egypt",
+    "price_per_night": 355,
+    "available_rooms": 7,
+    "rating": 4.6,
+    "source": "supplier_c",
+    "amenities": ["pool", "wifi", "restaurant", "pyramid view"]
+  },
+  {
+    "name": "Sofitel Legend Old Cataract",
+    "location": "Aswan, Egypt",
+    "price_per_night": 450,
+    "available_rooms": 10,
+    "rating": 4.9,
+    "source": "supplier_c",
+    "amenities": ["pool", "spa", "wifi", "restaurant", "historical", "nile view"]
+  },
+  {
+    "name": "Luxor Sheraton",
+    "location": "Luxor, Egypt",
+    "price_per_night": 195,
+    "available_rooms": 30,
+    "rating": 4.2,
+    "source": "supplier_c",
+    "amenities": ["pool", "wifi", "restaurant"]
+  },
+  {
+    "name": "Pyramids View Inn",
+    "location": "Giza, Egypt",
+    "price_per_night": 85,
+    "available_rooms": 8,
+    "rating": 4.0,
+    "source": "supplier_c",
+    "amenities": ["wifi", "pyramid view"]
+  }
+]

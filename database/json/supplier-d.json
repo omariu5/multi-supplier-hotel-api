@@ -1,0 +1,92 @@
+[
+  {
+    "name": "Four Seasons Cairo",
+    "location": "Cairo, Egypt",
+    "price_per_night": 375,
+    "available_rooms": 15,
+    "rating": 4.7,
+    "source": "supplier_d",
+    "amenities": ["pool", "spa", "wifi", "restaurant"]
+  },
+  {
+    "name": "Albatros Aqua Park",
+    "location": "Sharm El Sheikh, Egypt",
+    "price_per_night": 240,
+    "available_rooms": 40,
+    "rating": 4.4,
+    "source": "supplier_d",
+    "amenities": ["pool", "water park", "wifi", "restaurant", "beach access"]
+  },
+  {
+    "name": "Rixos Premium Seagate",
+    "location": "Sharm El Sheikh, Egypt",
+    "price_per_night": 380,
+    "available_rooms": 25,
+    "rating": 4.7,
+    "source": "supplier_d",
+    "amenities": ["pool", "spa", "wifi", "restaurant", "beach access", "all inclusive"]
+  },
+  {
+    "name": "Steigenberger Hotel",
+    "location": "Cairo, Egypt",
+    "price_per_night": 210,
+    "available_rooms": 25,
+    "rating": 4.3,
+    "source": "supplier_d",
+    "amenities": ["wifi", "restaurant", "gym"]
+  },
+  {
+    "name": "Coral Beach Resort",
+    "location": "Hurghada, Egypt",
+    "price_per_night": 190,
+    "available_rooms": 35,
+    "rating": 4.2,
+    "source": "supplier_d",
+    "amenities": ["pool", "beach access", "wifi", "restaurant"]
+  },
+  {
+    "name": "Baron Resort",
+    "location": "Sharm El Sheikh, Egypt",
+    "price_per_night": 280,
+    "available_rooms": 30,
+    "rating": 4.5,
+    "source": "supplier_d",
+    "amenities": ["pool", "spa", "wifi", "restaurant", "beach access"]
+  },
+  {
+    "name": "Marriott Mena House",
+    "location": "Giza, Egypt",
+    "price_per_night": 340,
+    "available_rooms": 12,
+    "rating": 4.6,
+    "source": "supplier_d",
+    "amenities": ["pool", "wifi", "restaurant", "pyramid view"]
+  },
+  {
+    "name": "Tropitel Naama Bay",
+    "location": "Sharm El Sheikh, Egypt",
+    "price_per_night": 160,
+    "available_rooms": 45,
+    "rating": 4.1,
+    "source": "supplier_d",
+    "amenities": ["pool", "wifi", "restaurant", "beach access"]
+  },
+  {
+    "name": "Desert Rose Resort",
+    "location": "Hurghada, Egypt",
+    "price_per_night": 170,
+    "available_rooms": 50,
+    "rating": 4.2,
+    "source": "supplier_d",
+    "amenities": ["pool", "beach access", "wifi", "restaurant", "all inclusive"]
+  },
+  {
+    "name": "Sunrise Crystal Bay",
+    "location": "Hurghada, Egypt",
+    "price_per_night": 220,
+    "available_rooms": 38,
+    "rating": 4.4,
+    "source": "supplier_d",
+    "amenities": ["pool", "spa", "wifi", "restaurant", "beach access", "all inclusive"]
+  }
+]
