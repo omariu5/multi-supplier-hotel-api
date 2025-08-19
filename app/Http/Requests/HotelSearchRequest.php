@@ -21,6 +21,7 @@ class HotelSearchRequest extends FormRequest
             'min_price' => 'nullable|numeric|min:0',
             'max_price' => 'nullable|numeric|min:0',
             'sort_by' => 'nullable|in:price,rating',
+            'page' => 'nullable|integer|min:1',
         ];
     }
 }
