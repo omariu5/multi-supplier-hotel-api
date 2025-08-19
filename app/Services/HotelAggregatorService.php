@@ -17,6 +17,10 @@ class HotelAggregatorService
 
     public function searchHotels(array $filters): array
     {
+        $page = (int) ($filters['page'] ?? 1);
+        $perPage = (int) ($filters['per_page'] ?? 10);
+        $sortBy = $filters['sort_by'] ?? 'price';
+
         $responses = Http::pool(fn($pool) => 
             collect($this->suppliers)->map(fn($url, $supplier) => 
                 $pool->get(config('app.url') . $url)
@@ -28,7 +32,18 @@ class HotelAggregatorService
             )->toArray()
         );
 
-        return $this->mergeAndFilter($responses, $filters);
+        $results = $this->mergeAndFilter($responses, $filters, $sortBy);
+        $total = count($results);
+        
+        return [
+            'data' => array_slice($results, ($page - 1) * $perPage, $perPage),
+            'meta' => [
+                'current_page' => $page,
+                'per_page' => $perPage,
+                'total' => $total,
+                'total_pages' => ceil($total / $perPage)
+            ]
+        ];
     }
 
     private function processResponse($response, string $supplier): array
@@ -61,18 +76,21 @@ class HotelAggregatorService
         return [];
     }
 
-    private function mergeAndFilter(array $responses, array $filters): array
+    private function mergeAndFilter(array $responses, array $filters, string $sortBy): array
     {
-        return LazyCollection::make($responses)
+        $collection = LazyCollection::make($responses)
             ->flatten(1)
             ->filter(fn($hotel) => $this->matchesFilters($hotel, $filters))
             ->groupBy('id')
             ->map(function ($hotels) {
                 return $hotels->sortBy('price_per_night')->first();
-            })
-            ->sortBy('price_per_night')
-            ->values()
-            ->all();
+            });
+
+        // Sort by rating (highest first) or price (lowest first)
+        return match($sortBy) {
+            'rating' => $collection->sortByDesc('rating')->values()->all(),
+            default => $collection->sortBy('price_per_night')->values()->all()
+        };
     }
 
     private function matchesFilters(array $hotel, array $filters): bool
