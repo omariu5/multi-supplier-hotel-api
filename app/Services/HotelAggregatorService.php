@@ -4,7 +4,7 @@ namespace App\Services;
 
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Log;
-use Illuminate\Support\Collection;
+use Illuminate\Support\LazyCollection;
 
 class HotelAggregatorService
 {
@@ -28,15 +28,14 @@ class HotelAggregatorService
             )->toArray()
         );
 
-        return $this->mergeAndDeduplicate($responses);
+        return $this->mergeAndFilter($responses, $filters);
     }
 
     private function processResponse($response, string $supplier): array
     {
         if (!$response->successful()) {
             Log::error("Failed to fetch hotels from {$supplier}", [
-                'status' => $response->status(),
-                'error' => $response->body()
+                'status' => $response->status()
             ]);
             return [];
         }
@@ -44,6 +43,7 @@ class HotelAggregatorService
         $hotels = $response->json() ?? [];
         
         return array_map(fn($hotel) => [
+            'id' => md5(strtolower($hotel['name'].$hotel['location'])),
             'name' => $hotel['name'] ?? '',
             'location' => $hotel['location'] ?? '',
             'price_per_night' => (float) ($hotel['price_per_night'] ?? 0),
@@ -56,21 +56,45 @@ class HotelAggregatorService
     private function handleError(\Throwable $e, string $supplier): array
     {
         Log::error("Error fetching hotels from {$supplier}", [
-            'error' => $e->getMessage(),
-            'trace' => $e->getTraceAsString()
+            'error' => $e->getMessage()
         ]);
         return [];
     }
 
-    private function mergeAndDeduplicate(array $responses): array
+    private function mergeAndFilter(array $responses, array $filters): array
     {
-        return collect($responses)
+        return LazyCollection::make($responses)
             ->flatten(1)
-            ->groupBy('name')
+            ->filter(fn($hotel) => $this->matchesFilters($hotel, $filters))
+            ->groupBy('id')
             ->map(function ($hotels) {
                 return $hotels->sortBy('price_per_night')->first();
             })
+            ->sortBy('price_per_night')
             ->values()
             ->all();
+    }
+
+    private function matchesFilters(array $hotel, array $filters): bool
+    {
+        // Skip filtering if no filters are provided
+        if (empty($filters)) {
+            return true;
+        }
+
+        // Price range filter
+        if (isset($filters['min_price']) && $hotel['price_per_night'] < (float) $filters['min_price']) {
+            return false;
+        }
+        if (isset($filters['max_price']) && $hotel['price_per_night'] > (float) $filters['max_price']) {
+            return false;
+        }
+
+        // Guest count filter (available rooms)
+        if (isset($filters['guests']) && $hotel['available_rooms'] < (int) $filters['guests']) {
+            return false;
+        }
+
+        return true;
     }
 }
