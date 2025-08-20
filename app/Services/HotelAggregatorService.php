@@ -56,7 +56,7 @@ class HotelAggregatorService
     {
  
         $hotels = array_map(fn($hotel) => [
-            'id' => md5(strtolower($hotel['name'].$hotel['location'])),
+            'id' => md5(strtolower(trim($hotel['name'].'|'.$hotel['location']))),
             'name' => $hotel['name'] ?? '',
             'location' => $hotel['location'] ?? '',
             'price_per_night' => (float) ($hotel['price_per_night'] ?? 0),
@@ -75,14 +75,15 @@ class HotelAggregatorService
         return [];
     }
 
-    private function mergeAndFilter(array $responses, array $filters, string $sortBy): array
+    public function mergeAndFilter(array $responses, array $filters, string $sortBy): array
     {
-        $collection = LazyCollection::make($responses)
+        $collection = LazyCollection::make($responses) // for handling large datasets efficiently in a real scenario
             ->flatMap(function ($response, $supplier) {
-                if ($response->successful()) {
+                
+                if ($response instanceof \Illuminate\Http\Client\Response && $response->successful()) {
                     return $this->processResponse($response->json(), $supplier);
                 }
-                $this->handleError($response, $supplier);
+                $this->handleError(new \RuntimeException("HTTP {$response->status()} from {$supplier}"), $supplier);
                 return [];
             })
             ->filter(fn($hotel) => $this->matchesFilters($hotel, $filters))
