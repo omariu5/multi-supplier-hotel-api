@@ -3,6 +3,7 @@
 namespace App\Services;
 
 use Illuminate\Support\Facades\Http;
+use Illuminate\Http\Client\Pool;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\LazyCollection;
 
@@ -20,19 +21,24 @@ class HotelAggregatorService
         $page = (int) ($filters['page'] ?? 1);
         $perPage = (int) ($filters['per_page'] ?? 10);
         $sortBy = $filters['sort_by'] ?? 'price';
+        $query = http_build_query($filters);
+        $responses = Http::timeout(3)
+            ->connectTimeout(1)
+            ->acceptJson()
+            ->pool(fn(Pool $pool) => 
+                collect($this->suppliers)->map(fn($url, $supplier) => 
+                    $pool->as($supplier)->get(config('app.url') . $url.'?' . $query)
+                )->toArray()
+            );
+        
+        $res = $this->mergeAndFilter($responses, $filters, $sortBy);
 
-        $responses = Http::pool(fn($pool) => 
-            collect($this->suppliers)->map(fn($url, $supplier) => 
-                $pool->get(config('app.url') . $url)
-                    ->throw()
-                    ->then(
-                        fn($response) => $this->processResponse($response, $supplier),
-                        fn($e) => $this->handleError($e, $supplier)
-                    )
-            )->toArray()
-        );
+        return $this->paginateResults($res, $perPage, $page); 
+    }
 
-        $results = $this->mergeAndFilter($responses, $filters, $sortBy);
+    private function paginateResults(array $results, int $perPage, int $page): array
+    {
+        
         $total = count($results);
         
         return [
@@ -46,18 +52,10 @@ class HotelAggregatorService
         ];
     }
 
-    private function processResponse($response, string $supplier): array
+    private function processResponse($hotels, string $supplier): array
     {
-        if (!$response->successful()) {
-            Log::error("Failed to fetch hotels from {$supplier}", [
-                'status' => $response->status()
-            ]);
-            return [];
-        }
-
-        $hotels = $response->json() ?? [];
-        
-        return array_map(fn($hotel) => [
+ 
+        $hotels = array_map(fn($hotel) => [
             'id' => md5(strtolower($hotel['name'].$hotel['location'])),
             'name' => $hotel['name'] ?? '',
             'location' => $hotel['location'] ?? '',
@@ -66,6 +64,7 @@ class HotelAggregatorService
             'rating' => (float) ($hotel['rating'] ?? 0),
             'source' => $supplier
         ], $hotels);
+        return $hotels ? array_values($hotels) : [];
     }
 
     private function handleError(\Throwable $e, string $supplier): array
@@ -79,11 +78,17 @@ class HotelAggregatorService
     private function mergeAndFilter(array $responses, array $filters, string $sortBy): array
     {
         $collection = LazyCollection::make($responses)
-            ->flatten(1)
+            ->flatMap(function ($response, $supplier) {
+                if ($response->successful()) {
+                    return $this->processResponse($response->json(), $supplier);
+                }
+                $this->handleError($response, $supplier);
+                return [];
+            })
             ->filter(fn($hotel) => $this->matchesFilters($hotel, $filters))
-            ->groupBy('id')
+            ->groupBy('id') // ensures no duplicates
             ->map(function ($hotels) {
-                return $hotels->sortBy('price_per_night')->first();
+                return $hotels->sortBy('price_per_night')->first(); // ensures the lowest price duplicates are kept
             });
 
         // Sort by rating (highest first) or price (lowest first)
